@@ -1,0 +1,33 @@
+#Count of a letter in a string
+
+String=input("Enter the String you want to enter: ")
+char=input("Enter the character you want to enter: ")
+
+count=0
+for i in range(len(String)):
+    if(String[i]==char):
+        count=count + 1
+print("The Total Number of Times",char,"has Occured =",count)
+
+
+
+
+
+#Check weather a string is palindrome or not
+
+String1=input("Enter the String you want to enter: ")
+if(String1 == String1[::-1]):
+    print("Entered String is Palindrome ")
+else:
+    print("Entered String is not Palindrome")
+
+
+
+
+
+#Longest word of the sentence
+
+Sentence = input("Enter the Sentence you want to enter:")
+longest = max(Sentence.split(), key=len)
+print("Longest word is: ", longest)
+print("And its length is: ",len(longest))
